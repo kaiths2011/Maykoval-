@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAYKOVAL — Upgrade Your Everyday</title>
+<meta name="description" content="Personal care, health care, hair care, massagers and smart lifestyle gadgets. Upgrade Your Everyday.">
+<link rel="preconnect" href="https://cdn.shopify.com">
+<style>
+:root{--bg:#fff;--soft:#f5f5f7;--line:#e5e5ea;--ink:#111;--mut:#6e6e73;--r:20px;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:16px/1.5 -apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}img{max-width:100%;display:block}
+.w{max-width:1280px;margin:auto;padding:0 24px}section{padding:72px 0}
+h1,h2{letter-spacing:-.03em;line-height:1.05}h2{font-size:clamp(28px,4vw,44px);margin-bottom:8px}
+.bar{background:#000;color:#fff;text-align:center;font-size:13px;padding:9px 12px;letter-spacing:.03em}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-weight:700;letter-spacing:.32em;font-size:20px}
+.links{display:flex;gap:28px;font-size:14px;color:#333}.links a:hover{color:var(--mut)}
+.ic{display:flex;gap:6px}.ic button{width:40px;height:40px;border-radius:50%;position:relative;transition:.2s}.ic button:hover{background:var(--soft)}
+.cnt{position:absolute;top:2px;right:0;background:#000;color:#fff;border-radius:99px;font-size:11px;min-width:18px;height:18px;line-height:18px}
+.burger{display:none}
+.btn{display:inline-block;background:#000;color:#fff;padding:14px 30px;border-radius:99px;font-weight:500;transition:.25s var(--ease)}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.btn.o{background:none;color:#000;border:1.5px solid #000}.btn.o:hover{background:#000;color:#fff}.btn[disabled]{opacity:.4;pointer-events:none}
+.hero{background:var(--soft);padding:0;overflow:hidden}.hero .w{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;min-height:600px}
+.hero h1{font-size:clamp(44px,7vw,88px)}.hero p{color:var(--mut);font-size:20px;margin:18px 0 32px}.hero .im{aspect-ratio:1;display:grid;place-items:center}.hero .im img{max-height:520px;object-fit:contain;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-12px)}}
+.hd{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px}.hd a{color:var(--mut);font-size:14px}.hd a:hover{color:#000}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.cat{background:var(--soft);border-radius:var(--r);padding:28px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:.3s var(--ease)}.cat:hover{transform:translateY(-4px);background:#ececf0}
+.cat img{height:110px;object-fit:contain;align-self:flex-end}.cat b{font-size:19px}
+.card{position:relative;display:block}.card .im{background:var(--soft);border-radius:var(--r);aspect-ratio:1;overflow:hidden;position:relative}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}.card:hover .im img{transform:scale(1.06)}
+.card h3{font-size:15px;font-weight:500;margin:12px 4px 2px}.pr{margin:0 4px;font-size:15px}.pr s{color:var(--mut);margin-left:8px;font-size:14px}
+.tag{position:absolute;top:12px;left:12px;background:#000;color:#fff;font-size:11px;padding:4px 10px;border-radius:99px;letter-spacing:.05em}.tag.g{background:#fff;color:#000}
+.wl{position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;background:#fff;z-index:2;font-size:17px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.sk{background:linear-gradient(90deg,var(--soft),#fff,var(--soft));background-size:200%;animation:sh 1.2s infinite;border-radius:var(--r);aspect-ratio:1}@keyframes sh{to{background-position:-200%}}
+.promo{background:#000;color:#fff;border-radius:28px;padding:64px 32px;text-align:center}.promo p{color:#aaa;margin:10px 0 24px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;text-align:center}.why span{font-size:30px}.why b{display:block;margin:8px 0 4px}.why p{color:var(--mut);font-size:14px}
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}.rv div{background:var(--soft);border-radius:var(--r);padding:28px}
+.news{background:var(--soft);text-align:center}.news form{display:flex;gap:10px;max-width:460px;margin:24px auto 0}
+input,select{font:inherit;padding:13px 18px;border:1px solid var(--line);border-radius:99px;background:#fff;width:100%}
+footer{background:#000;color:#aaa;padding:64px 0 32px;font-size:14px}footer .g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}footer h4{color:#fff;margin-bottom:12px}footer a{display:block;padding:3px 0}footer a:hover{color:#fff}
+.tb{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;align-items:center}.tb select{width:auto}.tb label{font-size:14px;color:var(--mut)}
+.pd{display:grid;grid-template-columns:1.1fr 1fr;gap:56px}.gal .main{background:var(--soft);border-radius:var(--r);aspect-ratio:1;overflow:hidden}.gal .main img{width:100%;height:100%;object-fit:contain}
+.th{display:flex;gap:10px;margin-top:12px;overflow-x:auto}.th img{width:72px;height:72px;object-fit:cover;border-radius:12px;background:var(--soft);cursor:pointer;border:2px solid transparent}.th img.on{border-color:#000}
+.pd h1{font-size:clamp(28px,4vw,40px)}.pp{font-size:24px;margin:12px 0}.pp s{color:var(--mut);font-size:18px;margin-left:10px}
+.opt{margin:18px 0}.opt b{font-size:14px;display:block;margin-bottom:8px}.opt button{border:1.5px solid var(--line);border-radius:99px;padding:9px 18px;margin:0 8px 8px 0;transition:.2s}.opt button.on{border-color:#000;background:#000;color:#fff}.opt button:hover{border-color:#000}
+.qty{display:inline-flex;border:1px solid var(--line);border-radius:99px;align-items:center}.qty button{width:42px;height:44px;font-size:18px}.qty span{min-width:28px;text-align:center}
+.act{display:flex;gap:12px;margin:22px 0;flex-wrap:wrap}.act .btn{flex:1;text-align:center;min-width:150px}
+.desc{color:#333;font-size:15px}.desc p{margin-bottom:10px}.spec{margin-top:24px;border-top:1px solid var(--line);padding-top:16px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:.3s;z-index:90}.ov.on{opacity:1;pointer-events:auto}
+.dr{position:fixed;top:0;right:0;height:100%;width:min(420px,100%);background:#fff;z-index:100;transform:translateX(100%);transition:.4s var(--ease);display:flex;flex-direction:column}.dr.on{transform:none}
+.dr .h{padding:20px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line);font-weight:600}.dr .b{flex:1;overflow:auto;padding:20px}.dr .f{padding:20px;border-top:1px solid var(--line)}
+.ln{display:flex;gap:14px;margin-bottom:18px;font-size:14px}.ln img{width:72px;height:72px;border-radius:12px;object-fit:cover;background:var(--soft)}.ln .qty button{height:30px;width:30px}
+.srch{position:fixed;top:0;left:0;right:0;background:#fff;z-index:100;padding:20px;transform:translateY(-100%);transition:.4s var(--ease)}.srch.on{transform:none}.srch .w{max-width:640px}
+.mm{display:none}.err{text-align:center;padding:80px 20px;color:var(--mut)}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,80px);background:#000;color:#fff;padding:12px 22px;border-radius:99px;transition:.4s var(--ease);z-index:200;font-size:14px}.toast.on{transform:translate(-50%,0)}
+.fade{animation:fi .6s var(--ease)}@keyframes fi{from{opacity:0;transform:translateY(12px)}}
+@media(max-width:860px){.links{display:none}.burger{display:block}.hero .w,.pd{grid-template-columns:1fr}.hero .w{min-height:auto;padding-top:40px}footer .g{grid-template-columns:1fr 1fr}section{padding:48px 0}
+.mm.on{display:flex;flex-direction:column;gap:4px;padding:8px 24px 16px;border-top:1px solid var(--line)}.mm a{padding:10px 0;font-size:17px}}
+</style></head><body>
+<div class="bar">Free shipping on qualifying orders · Upgrade Your Everyday</div>
+<header><div class="w nav"><button class="burger" id="bg" aria-label="Menu">☰</button><a class="logo" href="#/">MAYKOVAL</a>
+<nav class="links" id="nav"></nav><div class="ic"><button id="sb" aria-label="Search">🔍</button><button id="cb" aria-label="Cart">🛍<span class="cnt" id="cc">0</span></button></div></div>
+<nav class="mm" id="mm"></nav></header>
+<main id="app"></main>
+<footer><div class="w"><div class="g"><div><div class="logo" style="color:#fff">MAYKOVAL</div><p style="margin-top:12px">Upgrade Your Everyday.</p></div>
+<div><h4>Shop</h4><div id="fn"></div></div><div><h4>Help</h4><a href="#/page/contact">Contact</a><a href="#/page/shipping">Shipping</a><a href="#/page/returns">Returns</a></div>
+<div><h4>Follow</h4><a href="#" data-soc="instagram">Instagram</a><a href="#" data-soc="facebook">Facebook</a><a href="#" data-soc="tiktok">TikTok</a></div></div>
+<p style="margin-top:40px;border-top:1px solid #222;padding-top:20px">© <span id="yr"></span> MAYKOVAL. All rights reserved.</p></div></footer>
+<div class="ov" id="ov"></div>
+<aside class="dr" id="dr"><div class="h"><span>Your Cart</span><button id="cx">✕</button></div><div class="b" id="cl"></div><div class="f" id="cf"></div></aside>
+<div class="srch" id="sr"><div class="w"><input id="si" placeholder="Search products…" autocomplete="off"></div></div>
+<div class="toast" id="ts"></div>
+<script>
+/* ===== STORE SETTINGS (no products here — all products come from Shopify) ===== */
+const CFG={
+  social:{instagram:"",facebook:"",tiktok:""},           // paste your profile URLs
+  supportEmail:"",                                       // shown on Contact
+  reviews:[]                                             // e.g. [{name:"Sara",text:"Love it!"}] — leave empty to hide the section
+};
+/* ===== helpers ===== */
+const $=s=>document.querySelector(s),app=$('#app');
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money=m=>m?new Intl.NumberFormat(undefined,{style:'currency',currency:m.currencyCode||CUR}).format(m.amount):'';
+let CUR='USD',DOMAIN='';
+const im=(u,w=600)=>u?`${u}${u.includes('?')?'&':'?'}width=${w}`:'';
+async function gql(query,variables={}){
+  let r;try{r=await fetch('/api/shopify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables})})}catch(e){throw Error('Cannot reach the store. Check your connection.')}
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok||j.errors)throw Error(j.errors?.[0]?.message||'Store error '+r.status);
+  return j.data}
+const toast=t=>{const e=$('#ts');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2200)};
+const wl=()=>{try{return JSON.parse(localStorage.wl||'[]')}catch{return[]}};
+function togWl(h,b){let a=wl();a=a.includes(h)?a.filter(x=>x!==h):[...a,h];try{localStorage.wl=JSON.stringify(a)}catch{}b.textContent=a.includes(h)?'♥':'♡';toast(a.includes(h)?'Saved to wishlist':'Removed')}
+/* ===== queries ===== */
+const PF=`id handle title availableForSale featuredImage{url altText} priceRange{minVariantPrice{amount currencyCode}} compareAtPriceRange{minVariantPrice{amount currencyCode}}`;
+const card=p=>{const pr=p.priceRange.minVariantPrice,cp=p.compareAtPriceRange.minVariantPrice,sale=+cp.amount>+pr.amount;
+return `<div class="card fade"><button class="wl" data-h="${esc(p.handle)}" aria-label="Wishlist">${wl().includes(p.handle)?'♥':'♡'}</button><a href="#/product/${esc(p.handle)}"><div class="im">${p.featuredImage?`<img loading="lazy" src="${im(p.featuredImage.url,500)}" alt="${esc(p.featuredImage.altText||p.title)}">`:''}${!p.availableForSale?'<span class="tag g">Sold out</span>':sale?'<span class="tag">Sale</span>':''}</div><h3>${esc(p.title)}</h3><div class="pr">${money(pr)}${sale?`<s>${money(cp)}</s>`:''}</div></a></div>`};
+const skel=n=>`<div class="grid">${'<div class="sk"></div>'.repeat(n)}</div>`;
+const fail=(e,retry)=>`<div class="err"><h2>Something went wrong</h2><p>${esc(e.message)}</p><br><button class="btn" onclick="${retry}">Try again</button></div>`;
+function section(title,sub,id){return `<section><div class="w"><div class="hd"><div><h2>${title}</h2><p style="color:var(--mut)">${sub}</p></div><a href="#/collection/all">View all →</a></div><div id="${id}">${skel(4)}</div></div></section>`}
+/* ===== pages ===== */
+async function home(){
+  app.innerHTML=`<div class="hero"><div class="w"><div class="fade"><h1>Upgrade<br>Your Everyday.</h1><p>Personal care, wellness and smart gadgets — designed to make every day better.</p><a class="btn" href="#/collection/all">Shop Now</a> <a class="btn o" href="#/collection/all?sort=1">New Arrivals</a></div><div class="im" id="hi"></div></div></div>
+  <section><div class="w"><div class="hd"><h2>Shop by Category</h2></div><div class="cats" id="cats">${skel(5)}</div></div></section>
+  ${section('Best Sellers','Loved by our customers','bs')}${section('Featured','Handpicked for you','ft')}${section('New Arrivals','Just landed','na')}
+  <section style="padding-top:0"><div class="w"><div class="promo"><h2>Special Offers</h2><p>Limited-time savings on selected products.</p><a class="btn" style="background:#fff;color:#000" href="#/collection/all?sale=1">Shop Offers</a></div></div></section>
+  <section><div class="w"><div class="why"><div><span>✦</span><b>Premium Quality</b><p>Carefully selected products.</p></div><div><span>🚚</span><b>Fast Shipping</b><p>Delivered to your door.</p></div><div><span>🔒</span><b>Secure Checkout</b><p>Protected by Shopify.</p></div><div><span>↺</span><b>Easy Returns</b><p>Shop with confidence.</p></div></div></div></section>
+  ${CFG.reviews.length?`<section class="news"><div class="w"><h2>What customers say</h2><br><div class="rv">${CFG.reviews.map(r=>`<div>★★★★★<p style="margin:10px 0">${esc(r.text)}</p><b>${esc(r.name)}</b></div>`).join('')}</div></div></section>`:''}
+  <section class="news"><div class="w"><h2>Join the MAYKOVAL list</h2><p style="color:var(--mut)">New arrivals and exclusive offers.</p><form id="nf"><input type="email" required placeholder="Email address"><button class="btn">Subscribe</button></form></div></section>`;
+  $('#nf').onsubmit=async e=>{e.preventDefault();const f=new URLSearchParams({form_type:'customer','contact[email]':e.target[0].value,'contact[tags]':'newsletter'});try{await fetch(`https://${DOMAIN}/contact`,{method:'POST',mode:'no-cors',body:f});e.target.reset();toast('Thanks for subscribing!')}catch{toast('Could not subscribe, try again')}};
+  try{const d=await gql(`{collections(first:8){nodes{handle title image{url}}}
+   bs:products(first:8,sortKey:BEST_SELLING){nodes{${PF}}} na:products(first:8,sortKey:CREATED_AT,reverse:true){nodes{${PF}}}
+   ft:collection(handle:"featured"){products(first:8){nodes{${PF}}}}}`);
+   $('#cats').innerHTML=d.collections.nodes.map(c=>`<a class="cat" href="#/collection/${c.handle}"><b>${esc(c.title)}</b>${c.image?`<img loading="lazy" src="${im(c.image.url,300)}" alt="">`:''}</a>`).join('')||'<p>Add collections in Shopify.</p>';
+   const g=n=>n.length?`<div class="grid">${n.map(card).join('')}</div>`:'<p style="color:var(--mut)">No products yet.</p>';
+   $('#bs').innerHTML=g(d.bs.nodes);$('#na').innerHTML=g(d.na.nodes);
+   $('#ft').innerHTML=g((d.ft?.products.nodes.length?d.ft.products.nodes:d.bs.nodes.slice().reverse()));
+   const h=d.bs.nodes.find(p=>p.featuredImage);if(h)$('#hi').innerHTML=`<img src="${im(h.featuredImage.url,900)}" alt="${esc(h.title)}">`}
+  catch(e){$('#cats').innerHTML=fail(e,'route()');['bs','ft','na'].forEach(i=>$('#'+i).innerHTML='')}
+}
+const SORT=[['Featured','COLLECTION_DEFAULT','RELEVANCE',0],['Newest','CREATED','CREATED_AT',1],['Best selling','BEST_SELLING','BEST_SELLING',0],['Price: low to high','PRICE','PRICE',0],['Price: high to low','PRICE','PRICE',1]];
+async function collection(handle,qs){
+  const q=new URLSearchParams(qs),s=+q.get('sort')||0,sale=q.get('sale')==='1',search=handle==='search',term=q.get('q')||'';
+  app.innerHTML=`<section><div class="w"><h2 id="ct">${search?`Results for “${esc(term)}”`:'Loading…'}</h2><p id="cd" style="color:var(--mut);margin-bottom:24px"></p>
+  <div class="tb"><label>Sort <select id="so">${SORT.map((o,i)=>`<option value="${i}" ${i==s?'selected':''}>${o[0]}</option>`).join('')}</select></label>
+  <label><input type="checkbox" id="fs" ${q.get('stock')?'checked':''}> In stock</label><label><input type="checkbox" id="fo" ${sale?'checked':''}> On sale</label>
+  <label>Max price <input id="fp" type="number" min="0" style="width:110px" value="${q.get('max')||''}"></label></div><div id="gr">${skel(8)}</div></div></section>`;
+  const upd=()=>{const p=new URLSearchParams();if($('#so').value!='0')p.set('sort',$('#so').value);if(search)p.set('q',term);if($('#fo').checked)p.set('sale','1');if($('#fs').checked)p.set('stock','1');if($('#fp').value)p.set('max',$('#fp').value);location.hash=`#/collection/${handle}?${p}`};
+  ['so','fs','fo'].forEach(i=>$('#'+i).onchange=upd);$('#fp').onchange=upd;
+  try{let nodes;const o=SORT[s];
+   if(handle==='all'||search){const d=await gql(`query($q:String,$k:ProductSortKeys,$r:Boolean){products(first:48,query:$q,sortKey:$k,reverse:$r){nodes{${PF}}}}`,{q:search?term:null,k:o[2],r:!!o[3]});nodes=d.products.nodes;if(!search){$('#ct').textContent='All Products'}}
+   else{const d=await gql(`query($h:String!,$k:ProductCollectionSortKeys,$r:Boolean){collection(handle:$h){title description products(first:48,sortKey:$k,reverse:$r){nodes{${PF}}}}}`,{h:handle,k:o[1],r:!!o[3]});
+    if(!d.collection){$('#gr').innerHTML=fail(Error('Collection not found.'),"location.hash='#/'");$('#ct').textContent='';return}
+    $('#ct').textContent=d.collection.title;$('#cd').textContent=d.collection.description;document.title=d.collection.title+' — MAYKOVAL';nodes=d.collection.products.nodes}
+   if(sale)nodes=nodes.filter(p=>+p.compareAtPriceRange.minVariantPrice.amount>+p.priceRange.minVariantPrice.amount);
+   if(q.get('stock'))nodes=nodes.filter(p=>p.availableForSale);
+   if(q.get('max'))nodes=nodes.filter(p=>+p.priceRange.minVariantPrice.amount<=+q.get('max'));
+   $('#gr').innerHTML=nodes.length?`<div class="grid">${nodes.map(card).join('')}</div>`:'<p class="err">No products found.</p>'}
+  catch(e){$('#gr').innerHTML=fail(e,'route()')}
+}
+async function product(handle){
+  app.innerHTML=`<section><div class="w"><div class="pd"><div class="sk"></div><div class="sk" style="aspect-ratio:auto;height:400px"></div></div></div></section>`;
+  try{const d=await gql(`query($h:String!){product(handle:$h){title descriptionHtml availableForSale options{name values} specs:metafield(namespace:"custom",key:"specifications"){value}
+   images(first:10){nodes{url altText}} variants(first:100){nodes{id title availableForSale selectedOptions{name value} price{amount currencyCode} compareAtPrice{amount currencyCode} image{url}}}}
+   rec:productRecommendations(productHandle:$h){${PF}}}`,{h:handle});
+   const p=d.product;if(!p)throw Error('Product not found.');document.title=p.title+' — MAYKOVAL';
+   const V=p.variants.nodes;let sel={};p.options.forEach(o=>sel[o.name]=(V.find(v=>v.availableForSale)||V[0]).selectedOptions.find(x=>x.name===o.name).value);let qty=1,mainImg=null;
+   const draw=()=>{const v=V.find(v=>p.options.every(o=>v.selectedOptions.some(x=>x.name===o.name&&x.value===sel[o.name])))||V[0];
+    const hero=mainImg||v.image?.url||p.images.nodes[0]?.url,sale=v.compareAtPrice&&+v.compareAtPrice.amount>+v.price.amount;
+    app.innerHTML=`<section class="fade"><div class="w"><div class="pd"><div class="gal"><div class="main">${hero?`<img src="${im(hero,1000)}" alt="${esc(p.title)}">`:''}</div><div class="th">${p.images.nodes.map(i=>`<img loading="lazy" class="${i.url===hero?'on':''}" data-u="${esc(i.url)}" src="${im(i.url,150)}" alt="">`).join('')}</div></div>
+    <div><h1>${esc(p.title)}</h1><div class="pp">${money(v.price)}${sale?`<s>${money(v.compareAtPrice)}</s>`:''}</div>
+    ${p.options.filter(o=>!(o.name==='Title'&&o.values.length===1)).map(o=>`<div class="opt"><b>${esc(o.name)}</b>${o.values.map(x=>`<button class="${sel[o.name]===x?'on':''}" data-o="${esc(o.name)}" data-v="${esc(x)}">${esc(x)}</button>`).join('')}</div>`).join('')}
+    <div class="qty"><button id="qm">−</button><span>${qty}</span><button id="qp">+</button></div>
+    <div class="act"><button class="btn" id="ac" ${v.availableForSale?'':'disabled'}>${v.availableForSale?'Add to Cart':'Sold out'}</button><button class="btn o" id="bn" ${v.availableForSale?'':'disabled'}>Buy Now</button></div>
+    <div class="desc">${p.descriptionHtml}</div>${p.specs?`<div class="spec desc"><b>Specifications</b><p>${esc(p.specs.value).replace(/\n/g,'<br>')}</p></div>`:''}</div></div>
+    ${d.rec.length?`<div style="margin-top:72px"><h2 style="margin-bottom:24px">You may also like</h2><div class="grid">${d.rec.slice(0,4).map(card).join('')}</div></div>`:''}</div></section>`;
+    app.querySelectorAll('.th img').forEach(i=>i.onclick=()=>{mainImg=i.dataset.u;draw()});
+    app.querySelectorAll('.opt button').forEach(b=>b.onclick=()=>{sel[b.dataset.o]=b.dataset.v;mainImg=null;draw()});
+    $('#qm').onclick=()=>{qty=Math.max(1,qty-1);draw()};$('#qp').onclick=()=>{qty++;draw()};
+    $('#ac').onclick=async e=>{e.target.disabled=true;await addLine(v.id,qty,true);draw()};
+    $('#bn').onclick=async e=>{e.target.textContent='Redirecting…';try{const c=await cartCall(`mutation($l:[CartLineInput!]!){cartCreate(input:{lines:$l}){cart{checkoutUrl}userErrors{message}}}`,{l:[{merchandiseId:v.id,quantity:qty}]},'cartCreate');location.href=c.cart.checkoutUrl}catch(er){toast(er.message);draw()}}};
+   draw()}catch(e){app.innerHTML=`<div class="w">${fail(e,'route()')}</div>`}
+}
+function page(k){const t={contact:['Contact',CFG.supportEmail?`Email us at <a href="mailto:${esc(CFG.supportEmail)}"><u>${esc(CFG.supportEmail)}</u></a>.`:'Add your support email in CFG.supportEmail.'],shipping:['Shipping','Edit this text in index.html or link to your Shopify policy pages.'],returns:['Returns','Edit this text in index.html or link to your Shopify policy pages.']}[k]||['Not found',''];
+ app.innerHTML=`<section><div class="w" style="max-width:720px"><h2>${t[0]}</h2><p style="color:var(--mut)">${t[1]}</p></div></section>`}
+/* ===== cart ===== */
+const CF=`id checkoutUrl totalQuantity cost{subtotalAmount{amount currencyCode}} lines(first:50){nodes{id quantity merchandise{... on ProductVariant{title product{title handle} image{url} price{amount currencyCode}}}}}`;
+let CART=null;
+async function cartCall(q,v,key){const d=await gql(q.replace(/cart\{/,`cart{${CF} `),v);const r=d[key];if(r.userErrors?.length)throw Error(r.userErrors[0].message);if(r.cart){CART=r.cart;try{localStorage.cid=CART.id}catch{}drawCart()}return r}
+async function loadCart(){let id;try{id=localStorage.cid}catch{}if(!id)return;try{const d=await gql(`query($id:ID!){cart(id:$id){${CF}}}`,{id});CART=d.cart;if(!CART)localStorage.removeItem('cid')}catch{}drawCart()}
+async function addLine(id,qty,open){try{if(!CART)await cartCall(`mutation($l:[CartLineInput!]!){cartCreate(input:{lines:$l}){cart{id}userErrors{message}}}`,{l:[{merchandiseId:id,quantity:qty}]},'cartCreate');
+ else await cartCall(`mutation($c:ID!,$l:[CartLineInput!]!){cartLinesAdd(cartId:$c,lines:$l){cart{id}userErrors{message}}}`,{c:CART.id,l:[{merchandiseId:id,quantity:qty}]},'cartLinesAdd');if(open)tog('dr',1)}catch(e){toast(e.message)}}
+const upd=(id,q)=>cartCall(q?`mutation($c:ID!,$l:[CartLineUpdateInput!]!){cartLinesUpdate(cartId:$c,lines:$l){cart{id}userErrors{message}}}`:`mutation($c:ID!,$l:[ID!]!){cartLinesRemove(cartId:$c,lineIds:$l){cart{id}userErrors{message}}}`,{c:CART.id,l:q?[{id,quantity:q}]:[id]},q?'cartLinesUpdate':'cartLinesRemove').catch(e=>toast(e.message));
+function drawCart(){const n=CART?.totalQuantity||0,L=CART?.lines.nodes||[];$('#cc').textContent=n;$('#cc').style.display=n?'':'none';
+ $('#cl').innerHTML=L.length?L.map(l=>{const m=l.merchandise;return `<div class="ln"><img src="${im(m.image?.url,150)}" alt=""><div style="flex:1"><a href="#/product/${m.product.handle}">${esc(m.product.title)}</a><div style="color:var(--mut)">${m.title==='Default Title'?'':esc(m.title)}</div><div>${money(m.price)}</div><div class="qty"><button data-l="${l.id}" data-q="${l.quantity-1}">−</button><span>${l.quantity}</span><button data-l="${l.id}" data-q="${l.quantity+1}">+</button></div></div><button data-l="${l.id}" data-q="0">✕</button></div>`}).join(''):'<p style="color:var(--mut);text-align:center;margin-top:60px">Your cart is empty.</p>';
+ $('#cf').innerHTML=L.length?`<div style="display:flex;justify-content:space-between;margin-bottom:14px"><b>Subtotal</b><b>${money(CART.cost.subtotalAmount)}</b></div><a class="btn" style="display:block;text-align:center" href="${esc(CART.checkoutUrl)}">Checkout</a><p style="font-size:12px;color:var(--mut);text-align:center;margin-top:8px">Shipping & taxes calculated at checkout</p>`:''}
+$('#cl').onclick=e=>{const b=e.target.closest('button[data-l]');if(b)upd(b.dataset.l,+b.dataset.q)};
+const tog=(id,on)=>{$('#'+id).classList.toggle('on',!!on);$('#ov').classList.toggle('on',!!on)};
+$('#cb').onclick=()=>tog('dr',1);$('#cx').onclick=$('#ov').onclick=()=>{tog('dr',0);tog('sr',0)};
+$('#sb').onclick=()=>{tog('sr',1);setTimeout(()=>$('#si').focus(),300)};
+$('#si').onkeydown=e=>{if(e.key==='Enter'&&e.target.value.trim()){location.hash='#/collection/search?q='+encodeURIComponent(e.target.value.trim());tog('sr',0)}};
+$('#bg').onclick=()=>$('#mm').classList.toggle('on');
+document.addEventListener('click',e=>{const w=e.target.closest('.wl');if(w){e.preventDefault();togWl(w.dataset.h,w)}if(e.target.closest('#mm a'))$('#mm').classList.remove('on');const s=e.target.closest('[data-soc]');if(s){e.preventDefault();const u=CFG.social[s.dataset.soc];u?open(u,'_blank','noopener'):toast('Add your link in CFG.social')}});
+/* ===== router ===== */
+function route(){const h=location.hash.slice(1)||'/',[path,qs]=h.split('?'),[,a,b]=path.split('/');window.scrollTo(0,0);document.title='MAYKOVAL — Upgrade Your Everyday';
+ if(a==='collection')collection(decodeURIComponent(b||'all'),qs);else if(a==='product')product(b);else if(a==='page')page(b);else home()}
+addEventListener('hashchange',route);
+(async()=>{$('#yr').textContent=new Date().getFullYear();
+ try{DOMAIN=(await (await fetch('/api/shopify')).json()).domain}catch{}
+ route();loadCart();
+ try{const d=await gql(`{collections(first:8){nodes{handle title}}}`);const l=d.collections.nodes.map(c=>`<a href="#/collection/${c.handle}">${esc(c.title)}</a>`).join('')+'<a href="#/collection/all">All</a>';$('#nav').innerHTML=l;$('#mm').innerHTML=l;$('#fn').innerHTML=l}catch{}})();
+</script></body></html>
